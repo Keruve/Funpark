@@ -1,8 +1,7 @@
 # Funpark
 ----------------------------- ADMIN-PARKING ------------------------------
 
---------------------------------------------------------------------------
-Funcionalidades:
+---------------------------- FUNCIONALIDADES -----------------------------
 - 1. Gestion de entrada y salida de vehiculos. (def in_out())
 - 2. Gestion de tipo de vehiculo.
 - 3. Gestion de plazas de aparcamiento con tipos y tasas.
