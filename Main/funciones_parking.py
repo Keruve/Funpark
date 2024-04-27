@@ -38,7 +38,7 @@ def selector_main_menu():
         if option == "3":
             clear_console()
             print("---------------- GESTION DE PLAZAS POR TIPO DE VEHICULO -----------------")
-            input(">")
+            gestion_plazas_tipo_vehiculo()
         if option == "4":
             clear_console()
             print("--------------------- GESTION DE PLAZAS POR PLANTA ----------------------")
@@ -57,7 +57,7 @@ def selector_main_menu():
             input(">")
         if option == "e":
             clear_console()
-            print("Gracias por utilizar funpark :)")
+            print("Gracias por utilizar Funpark :)")
             breakpoint()
         else:
             clear_console()
@@ -65,11 +65,47 @@ def selector_main_menu():
             input("Porfavor ingrese una opcion valida, Presiona enter para continuar...")
             continue
 def gestion_plazas_planta():
-    print("1. Planta 0")
+    print("0. Planta 0")
     print("1. Planta 1")
-    print("1. Planta 2")
-    print("1. Planta 3")
-    print("1. Planta VIP")
+    print("2. Planta 2")
+    print("3. Planta 3")
+    print("4. Planta VIP")
+    guiongen()
+    print("E. Para retroceder en el menu.")
+    guiongen()
+    optiongen = str(input(">"))
+    option = optiongen.lower()
+    while True:
+        if option == "0":
+            clear_console()
+            print("------------------------------- PLANTA 0 --------------------------------")
+        if option == "1":
+            clear_console()
+            print("------------------------------- PLANTA 1 --------------------------------")
+        if option == "2":
+            clear_console()
+            print("------------------------------- PLANTA 2 --------------------------------")
+        if option == "3":
+            clear_console()
+            print("------------------------------- PLANTA 3 --------------------------------")
+        if option == "4":
+            clear_console()
+            print("------------------------------ PLANTA VIP -------------------------------")
+        if option == "e":
+            clear_console()
+            main_menu()
+            selector_main_menu()
+        else:
+            clear_console()
+            print("------------------------------ ERROR ------------------------------------")
+            input("Porfavor ingrese una opcion valida, Presiona enter para continuar...")
+            continue
+def gestion_plazas_tipo_vehiculo():
+    print("1. Coche")
+    print("2. Motocicletas")
+    print("3. Camion")
+    print("4. Bicicleta")
+    print("5. Vehiculo VIP")
     guiongen()
     print("E. Para retroceder en el menu.")
     guiongen()
@@ -78,19 +114,19 @@ def gestion_plazas_planta():
     while True:
         if option == "1":
             clear_console()
-            print("------------------------------- PLANTA 0 --------------------------------")
-        if option == "1":
+            print("-------------------------------- COCHES ---------------------------------")
+        if option == "2":
             clear_console()
-            print("------------------------------- PLANTA 1 --------------------------------")
-        if option == "1":
+            print("----------------------------- MOTOCICLETAS ------------------------------")
+        if option == "3":
             clear_console()
-            print("------------------------------- PLANTA 2 --------------------------------")
-        if option == "1":
+            print("------------------------------- CAMIONES --------------------------------")
+        if option == "4":
             clear_console()
-            print("------------------------------- PLANTA 3 --------------------------------")
-        if option == "1":
+            print("------------------------------ BICICLETAS -------------------------------")
+        if option == "5":
             clear_console()
-            print("------------------------------ PLANTA VIP -------------------------------")
+            print("----------------------------- VEHICULO VIP ------------------------------")
         if option == "e":
             clear_console()
             main_menu()
