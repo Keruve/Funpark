@@ -1,4 +1,6 @@
 import funciones_parking as funpark
+from funciones_parking import ParkingSpot, Vehicle, Parking
+
 
 while True:
     funpark.clear_console()
